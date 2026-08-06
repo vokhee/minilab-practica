@@ -1,0 +1,235 @@
+:root {
+  --azul-oscuro: #0d3b66;
+  --azul-medio: #1a5f9e;
+  --azul-claro: #e8f4fc;
+  --amarillo: #f5c518;
+  --texto: #2c3e50;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--texto);
+}
+
+.navbar {
+  background: #ffff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 0.75rem 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #1a5f9e;
+}
+
+.btn-ingresar {
+  background: var(--azul-medio);
+  color: #fff;
+  border: none;
+  border-radius: 6px;                  
+  padding: 6px 18px;                   
+  font-weight: 600;
+}
+
+
+
+.portada {
+  background: url('../img/pexels-delot-16420473.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 4.5rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.portada-badge {
+  background: var(--amarillo);
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.btn-programas {
+  background: var(--azul-medio);
+  color: #fff;
+  border: none;
+  border-radius: 6px;                  
+  padding: 10px 24px;                  
+  font-weight: 600;
+}
+
+
+
+
+.oportunidades {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.icon-circle span {
+  font-size: 1.5rem;
+  color: #1a5f9e;
+}
+
+.icon-circle {
+  width: 56px;                       
+  height: 56px;                       
+  border-radius: 50%;
+  background: #e8f4fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;               
+}
+
+.card-oportunidad {
+  background: #fff;
+  border: none;
+  border-radius: 12px;                 
+  padding: 32px 24px;                  
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.card-oportunidad h5 {
+  font-weight: 700;
+  margin-bottom: 10px;                
+}
+
+.card-oportunidad p {
+  font-size: 0.9rem;                  
+  color: #666;
+  margin: 0;
+}
+
+
+
+.comunidad {
+  padding: 0px;                    
+  background: #fff;
+}
+
+.comunidad-illustration {
+  min-height: 320px;                
+  height: 100%;
+  overflow: hidden;
+}
+.comunidad-illustration img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;              
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.tecnologia {
+  padding: 0;
+}
+.tecnologia-iq {
+  min-height: 360px;                
+  height: 100%;
+  overflow: hidden;
+}
+.tecnologia-izq img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;                   
+  object-fit: cover;
+  display: block;
+}
+.tecnologia-dere {
+  background: #D9E6F5;
+  min-height: 360px;                  
+  display: flex;
+  align-items: center;
+  padding: 48px 40px;                  
+}
+.tecnologia-dere h2 {
+  font-size: 1.8rem;                  
+  font-weight: 700;
+  margin-bottom: 16px;             
+}
+.tecnologia-dere p {
+  color: #555;
+  margin-bottom: 24px;               
+  max-width: 400px;               
+}
+
+
+
+
+.boletin {
+  background: #1a5f9e;
+  padding: 64px 0 80px;                
+  color: #fff;
+}
+.boletin-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;                 
+  padding: 40px 32px;                  
+  max-width: 520px;                    
+  margin: 0 auto;
+  text-align: center;
+}
+.boletin-badge {
+  background: #0d3b66;
+  color: #fff;
+  font-size: 0.7rem;                   
+  font-weight: 700;
+  padding: 4px 11px;                                   
+  display: inline-block;
+  margin-bottom: 16px;                
+}
+.boletin-box h3 {
+  font-size: 1.6rem;                   
+  font-weight: 700;
+  margin-bottom: 10px;                 
+}
+.boletin-box > p {
+  font-size: 0.95rem;                
+  opacity: 0.85;
+  margin-bottom: 24px;                 
+}
+
+.boletin-form .btn-suscribir {
+  background: var(--amarillo);
+  color: #1a1a1a;
+  border: none;
+  font-weight: 700;
+  padding: 10px 20px;                
+}
+
+
+footer {
+  background: #0a2f52;
+  color: rgba(255,255,255,0.7);
+  padding: 20px 0;                     /* px */
+  font-size: 0.9rem;                   /* rem */
+}
+footer a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  margin-left: 20px;                   /* px */
+}
+footer a:hover {
+  color: #fff;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .portada h1 { font-size: 2rem; }        /* rem */
+  .portada { padding: 48px 0 56px; }      /* px */
+  .comunidad-illustration img,
+  .tecnologia-izq img { min-height: 260px; } /* px */
+  .tecnologia-dere { padding: 40px 24px; }   /* px */
+}
